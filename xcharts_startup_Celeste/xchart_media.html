@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="build/xcharts.css">
+
+<script src="d3.v2.min.js"></script>
+<script src="build/xcharts.js"></script>
+</head>
+
+<body>
+
+<figure class="xchart" id="myChart" style='height:500px'></figure>
+
+<script>
+var data = {
+      "main": [
+        {
+          "label": "Foo",
+          "data": [
+            {
+              "x": "Arab Americans",
+              "y": 227
+
+            },
+            {
+              "x": "Area Planning & Development",
+              "y": 362
+            },
+			{
+              "x": "African Americans",
+              "y": 1229
+            },
+			{
+              "x": "Automobile Industry",
+              "y": 1620
+            },
+			{
+              "x": "Bankruptcy",
+              "y": 257
+            },
+			{
+              "x": "Children & Youth",
+              "y": 779
+            },
+			
+			{
+              "x": "Cities",
+              "y": 2264
+            },
+			
+			{
+              "x": "Civil Rights",
+              "y": 270
+            },
+			
+			{
+              "x": "Business Community",
+              "y": 342
+            },
+			
+			{
+              "x": "Colleges & Universities",
+              "y": 708
+            },
+			
+			{
+              "x": "Community Development",
+              "y": 352
+            },
+			
+			{
+              "x": "Education Reform",
+              "y": 223
+            },
+			
+			{
+              "x": "Criminal Investigations",
+              "y": 360
+            },
+			
+			{
+              "x": "Demonstrations & Protests",
+              "y": 323
+            },
+			
+			{
+              "x": "Economic Development",
+              "y": 442
+            },
+			
+			{
+              "x": "Minority & Ethnic groups",
+              "y": 317
+            },
+			
+			{
+              "x": "Murders & Murder Attempts",
+              "y": 479
+            },
+			
+			{
+              "x": "Music",
+              "y": 251
+            },
+			
+			{
+              "x": "Neighborhoods",
+              "y": 492
+            },
+			
+			{
+              "x": "Parks & Recreation Areas",
+              "y": 224
+            },
+			
+			{
+              "x": "Police",
+              "y": 281
+            },
+			
+			{
+              "x": "Politics",
+              "y": 461
+            },
+			
+			{
+              "x": "Professional Baseball",
+              "y": 1215
+            },
+			
+			{
+              "x": "Professional Basketball",
+              "y": 606
+            },
+			
+			{
+              "x": "Professional Football",
+              "y": 747
+            },
+			
+			{
+              "x": "Professional Hockey",
+              "y": 558
+            },
+			
+			{
+              "x": "Public Schools",
+              "y": 1063
+            },
+			
+			{
+              "x": "Women",
+              "y": 354
+            },
+			
+			{
+              "x": "Homeless People",
+              "y": 224
+            },
+			
+			{
+              "x": "Education",
+              "y": 597
+            },
+			
+			{
+              "x": "Labor Unions",
+              "y": 277
+            },
+			
+			{
+              "x": "Mayors",
+              "y": 1349
+            },
+          ],
+          "className": ".foo"
+        }
+      ],
+      "xScale": "ordinal",
+      "yScale": "linear",
+      
+    },
+    chart = new xChart('bar', data, '#myChart');
+  </script>
+</body>
+</html>

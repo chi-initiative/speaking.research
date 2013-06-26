@@ -2,18 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="build/xcharts.css">
+<title>Media Writing</title>
+<link rel="stylesheet" href="master.css">
 
 <script src="d3.v2.min.js"></script>
-<script src="build/xcharts.js"></script>
+<script src="barcharts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 
 <body>
 
-<figure class="xchart" id="myChart" style='height:500px'></figure>
+<figure id="myChart" style='height:500px'; 'width:500px'></figure>
 
 <script>
+var tt = document.createElement('div'),
+  leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').css('margin-left').replace('px', '')),
+  topOffset = -32;
+tt.className = 'tooltip';
+document.body.appendChild(tt);
+
 var data = {
       "main": [
         {
@@ -155,8 +162,19 @@ var data = {
       "xScale": "ordinal",
       "yScale": "linear",
       
-    },
-    chart = new xChart('bar', data, '#myChart');
+    };
+   var opts = {
+  "mouseover": function (d, i) {
+    var pos = $(this).offset();
+    $(tt).text(d.x + ': ' + d.y + ' Occurrences')
+      .css({top: topOffset + pos.top, left: pos.left + leftOffset})
+      .show();
+  },
+  "mouseout": function (x) {
+    $(tt).hide();
+  }
+  };
+   var MyChart = new xChart('bar', data, '#myChart', opts);
   </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 
 <body>
 
-<figure id="myChart" style='height:500px'; 'width:500px'></figure>
+<figure id="myChart" style='height:500px'; 'width:700px'></figure>
 
 <script>
 var tt = document.createElement('div'),
@@ -166,7 +166,7 @@ var data = {
    var opts = {
   "mouseover": function (d, i) {
     var pos = $(this).offset();
-    $(tt).text(d.x + ': ' + d.y + ' Occurrences')
+    $(tt).text(d.x + ': ' + d.y)
       .css({top: topOffset + pos.top, left: pos.left + leftOffset})
       .show();
   },

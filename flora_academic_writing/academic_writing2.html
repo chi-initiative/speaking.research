@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Academic Writing on Detroit</title>
-	<link rel="stylesheet" href="flora_master.css">
+	<link rel="stylesheet" href="master.css">
 	<script src="d3.v2.min.js"></script>
 	<script src="barcharts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -11,7 +11,7 @@
 
 <body>
 
-<figure id="myChart" style="height:500px" "width:600px" ></figure>
+<figure id="myChart" style="height:500px" ></figure>
 
 <script>
 var tt = document.createElement('div')
@@ -25,14 +25,6 @@ var data = {
           "label": "Academic Writing on Detroit by Theme",
           "data": [
 			{
-              "x": "Black Americans",
-              "y": 136
-            },			
-			{
-              "x": "Cities",
-              "y": 131
-            },
-			{
               "x": "Whites",
               "y": 64
             },            
@@ -43,10 +35,6 @@ var data = {
             {
               "x": "Race Relations",
               "y": 56
-            },
-            {
-              "x": "Automobile Industry",
-              "y": 54
             },
 			{
               "x": "Racism",
@@ -84,10 +72,7 @@ var data = {
               "x": "Poverty",
               "y": 32
             },
-			{
-              "x": "Minority & Ethnic Groups",
-              "y": 31
-            },
+
 			{
               "x": "Hispanic Americans",
               "y": 30
@@ -109,30 +94,9 @@ var data = {
               "y": 27
             },
 			{
-              "x": "Children",
-              "y": 27
-            },
-			{
-              "x": "Economic Development",
-              "y": 27
-            },	
-			{
               "x": "Employment",
               "y": 25
             },	
-			{
-              "x": "Community Development",
-              "y": 24
-            },
-			{
-              "x": "Arab Americans",
-              "y": 23
-            },		
-			{
-              "x": "Mayors",
-              "y": 23
-            },
-
 			{
               "x": "Drug Abuse",
               "y": 20
@@ -144,6 +108,96 @@ var data = {
           ],
         "className": ".academic"
         },
+            {
+          "label": "Arab Americans",
+          "data": [
+      	{
+              "x": "Arab Americans",
+              "y": 23
+            },	   
+          ],
+          "className": ".comp.arabamericans"
+          }, {
+          "label": "Automobile Industry",
+          "data": [
+            {
+              "x": "Automobile Industry",
+              "y": 54
+            },
+          ],
+          "className": ".comp.automobileindustry"
+          },
+          {
+          "label": "Black Americans",
+          "data": [
+            {
+              "x": "Black Americans",
+              "y": 136
+            },			            
+          ],
+          "className": ".comp.blackamericans"
+          },
+          {
+          "label": "Children",
+          "data": [
+            {
+              "x": "Children",
+              "y": 27
+            },			            
+          ],
+          "className": ".comp.children"
+          },
+          {
+          "label": "Cities",
+          "data": [
+            {
+              "x": "Cities",
+              "y": 131
+            },			            
+          ],
+          "className": ".comp.cites"
+          },
+          {
+          "label": "Community Development",
+          "data": [
+            {
+              "x": "Community Development",
+              "y": 24
+            },			            
+          ],
+          "className": ".comp.communitydevelopment"
+          },
+          {
+          "label": "Economic Development",
+          "data": [
+            	{
+              "x": "Economic Development",
+              "y": 27
+            },				            
+          ],
+          "className": ".comp.economicdevelopment"
+          },
+          {
+          "label": "Mayors",
+          "data": [
+            {
+              "x": "Mayors",
+              "y": 23
+            },
+			            
+          ],
+          "className": ".comp.mayors"
+          },
+          {
+          "label": "Minority & Ethnic Groups",
+          "data": [
+            	{
+              "x": "Minority & Ethnic Groups",
+              "y": 31
+            },			            
+          ],
+          "className": ".comp.minorityethnic"
+          },
       ],
       "xScale": "ordinal",
       "yScale": "linear",

@@ -25,7 +25,7 @@ _visutils = {
   colorClass: colorClass
 };
 var local = this,
-  defaultSpacing = 0.25;
+  defaultSpacing = -5;
 
 function _getDomain(data, axis) {
   return _.chain(data)

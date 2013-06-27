@@ -16,7 +16,7 @@
 	box-sizing:border-box
 }
 html,body{
-	font:normal 14px / 20px Helvetica,Arial,Verdana,sans-serif;
+	font:normal 13px / 20px "gill sans",sans-serif;
 	color:#0e2e42
 }
 var,samp,pre,code{
@@ -251,12 +251,12 @@ pre{
 }
 .axis .tick{
 	stroke:#f1f5f7;
-	stroke-width:1px
+	stroke-width:3px
 }
 .axis text{
 	font-family:"Gill Sans MT",Helvetica,Arial,Verdana,sans-serif;
-	fill:#7e97a6;
-	font-size:12px
+	fill:#0000;
+	font-size:16px
 }
 .opt h1,.opt h1 var,.opt h1 code{font-size:14px}.opt .opt{margin:0 20px}.opt .opt h2{margin:0}hr{position:relative;z-index:-1;clear:both;border-top:1px solid rgba(14,46,66,0.2);margin:0 0 40px 0}hr:before{content:'…';direction:ltr;text-align:left;text-indent:-999em;overflow:hidden;left:0;right:0;top:0;position:absolute;-webkit-box-shadow:0 -8px 8px -8px rgba(14,46,66,0.2);-moz-box-shadow:0 -8px 8px -8px rgba(14,46,66,0.2);-ms-box-shadow:0 -8px 8px -8px rgba(14,46,66,0.2);-o-box-shadow:0 -8px 8px -8px rgba(14,46,66,0.2);box-shadow:0 -8px 8px -8px rgba(14,46,66,0.2);border-collapse:separate}.docNav{list-style:none;margin:0}.docNav.fixed{position:fixed;top:10px}
 .docNav ol{

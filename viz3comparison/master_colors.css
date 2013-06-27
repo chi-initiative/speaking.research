@@ -196,10 +196,10 @@ pre{
 	display:block;
 	fill:rgba(242,101,34,0.1)
 }
-.color1 .line{stroke:#4da944}.color1 rect,.color1 circle{fill:#4da944}.color1 .fill{fill:rgba(77,169,68,0.1)}.color1.comp .line{stroke: none}.color1.comp rect{fill:#9dd597}
+.color1 .line{stroke:#4da944}.color1 rect,.color1 circle{fill:#4da944}.color1 .fill{fill:rgba(77,169,68,0.1)}.color1.comp .line{stroke: none}.color1.comp rect{fill:#CBA3FF}
 .color1.comp .fill{fill:rgba(242,156,156,0.4)}.color1.comp circle,
 .color1.comp .pointer{
-	fill:#9dd597
+	fill:#CBA3FF
 }
 .color1.comp.lineshade .fill,
 .color1.comp.lineshadeup .fill{
@@ -211,7 +211,7 @@ pre{
 }
 .color0 rect,
 .color0 circle{
-	fill:#3880aa;
+	fill:#FFB9A3;
 	stroke-width:1px;
 }
 .color0 .fill{

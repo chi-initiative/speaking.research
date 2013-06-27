@@ -211,7 +211,7 @@ pre{
 }
 .color0 rect,
 .color0 circle{
-	fill:#8CDBA1;
+	fill:#CBA3FF;
 	stroke-width:1px;
 }
 .color0 .fill{
@@ -262,7 +262,7 @@ pre{
 .docNav ol{
 	padding:0 0 0 10px;
 	margin:0 0 0 10px;
-	border-left:5px solid #f1f5f7;
+	border-left:1px solid #f1f5f7;
 	height:0;
 	overflow:hidden;
 	list-style:none;

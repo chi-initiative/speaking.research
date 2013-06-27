@@ -25,7 +25,7 @@ _visutils = {
   colorClass: colorClass
 };
 var local = this,
-  defaultSpacing = 0.25;
+  defaultSpacing = .5;
 
 function _getDomain(data, axis) {
   return _.chain(data)
@@ -892,7 +892,7 @@ _.defaults(xChart.prototype, {
       .tickFormat(o.tickFormatX)
       .orient('bottom');
 
-    /*xAxis = self._gScale.selectAll('g.axisX')
+    xAxis = self._gScale.selectAll('g.axisX')
       .data(emptyData);
 
     xAxis.enter().append('g')
@@ -915,7 +915,7 @@ _.defaults(xChart.prototype, {
           return i % (Math.ceil(labels.length / xTicks) + 1);
         })
         .remove();
-    }*/
+    }
 
     yRules = d3.svg.axis()
       .scale(self.yScale)

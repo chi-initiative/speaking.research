@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Academic Writing on Detroit</title>
-	<link rel="stylesheet" href="master.css">
+	<link rel="stylesheet" href="master_colors.css">
 	<script src="d3.v2.min.js"></script>
 	<script src="barcharts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -11,7 +11,7 @@
 
 <body>
 
-<figure id="myChart" style="height:500px" "width=600px" ></figure>
+<figure id="myChart" style="height:500px" "width=1200px" ></figure>
 
 <script>
 var tt = document.createElement('div')
@@ -22,60 +22,6 @@ leftOffset = -(~~$('html').css('padding-left').replace('px', '') + ~~$('body').c
 var data = {
 	"main": [
         {
-          "label": "Academic Writing on Detroit by Theme",
-          "data": [
-				{
-              "x": "Arab Americans",
-              "y": 23
-            },
-            {
-              "x": "Automobile Industry",
-              "y": 54
-            },	
-            {
-              "x": "Black Americans",
-              "y": 136
-            },
-		    {
-              "x": "Children & Youth",
-              "y": 27
-            },			            
-            {
-              "x": "Cities",
-              "y": 131
-            },			            
-            {
-              "x": "Community Development",
-              "y": 24
-            },			            
-            	{
-              "x": "Economic Development",
-              "y": 27
-            },				            
-            {
-              "x": "Mayors",
-              "y": 23
-            },
-		    	{
-              "x": "Minority & Ethnic Groups",
-              "y": 31
-            },			            
-          {
-              "x": "Popular Music",
-              "y": 27
-            },
-			{
-              "x": "Politics",
-              "y": 44
-            },
-			{
-              "x": "Women",
-              "y": 37
-            },
-            ],
-        "className": ".academic"
-        },
-            {
           "label": "Media Writing on Detroit by Theme",
           "data": [
 				{
@@ -83,7 +29,7 @@ var data = {
               "y": 227
             },
             {
-              "x": "Automobile Industry",
+              "x": "Automobiles",
               "y": 1620
             },	
             {
@@ -91,7 +37,7 @@ var data = {
               "y": 1229
             },
 		    {
-              "x": "Children & Youth",
+              "x": "Youth",
               "y": 779
             },			            
             {
@@ -99,11 +45,11 @@ var data = {
               "y": 2264
             },			            
             {
-              "x": "Community Development",
+              "x": "Community Dev",
               "y": 352
             },			            
             	{
-              "x": "Economic Development",
+              "x": "Economic Dev",
               "y": 442
             },				            
             {
@@ -111,11 +57,11 @@ var data = {
               "y": 1349
             },
 		    	{
-              "x": "Minority & Ethnic Groups",
+              "x": "Minority & Ethnic",
               "y": 317
             },			            
           {
-              "x": "Popular Music",
+              "x": "Music",
               "y": 251
             },
 			{
@@ -127,8 +73,64 @@ var data = {
               "y": 354
             },
             ],
-        "className": ".comp.media"
+        "className": ".media"
         },
+        
+        {
+          "label": "Academic Writing on Detroit by Theme",
+          "data": [
+				{
+              "x": "Arab Americans",
+              "y": 23
+            },
+            {
+              "x": "Automobiles",
+              "y": 107
+            },	
+            {
+              "x": "Black Americans",
+              "y": 136
+            },
+		    {
+              "x": "Youth",
+              "y": 27
+            },			            
+            {
+              "x": "Cities",
+              "y": 131
+            },			            
+            {
+              "x": "Community Dev",
+              "y": 24
+            },			            
+            	{
+              "x": "Economic Dev",
+              "y": 27
+            },				            
+            {
+              "x": "Mayors",
+              "y": 23
+            },
+		    	{
+              "x": "Minority & Ethnic",
+              "y": 31
+            },			            
+          {
+              "x": "Music",
+              "y": 27
+            },
+			{
+              "x": "Politics",
+              "y": 44
+            },
+			{
+              "x": "Women",
+              "y": 37
+            },
+            ],
+        "className": ".comp.academic"
+        },
+            
       ],
       "xScale": "ordinal",
       "yScale": "linear",

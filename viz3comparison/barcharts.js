@@ -895,7 +895,7 @@ _.defaults(xChart.prototype, {
     xAxis = self._gScale.selectAll('g.axisX')
       .data(emptyData);
 
-    xAxis.enter().append('g')
+    /*xAxis.enter().append('g')
       .attr('class', 'axis axisX')
       .attr('transform', 'translate(0,' + bottom + ')');
 
@@ -915,7 +915,7 @@ _.defaults(xChart.prototype, {
           return i % (Math.ceil(labels.length / xTicks) + 1);
         })
         .remove();
-    }
+    }*/
 
     yRules = d3.svg.axis()
       .scale(self.yScale)
